@@ -1,0 +1,2 @@
+packages:
+  - { name: "rtf", chip: "R", desc: "RTF ⇄ richdoc converter.", url: "https://github.com/go-rtf/rtf", doc: "https://pkg.go.dev/github.com/go-rtf/rtf" }

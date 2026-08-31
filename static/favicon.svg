@@ -1,0 +1,13 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="go-rtf">
+  <defs><linearGradient id="rtf" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#1E1B4B"/></linearGradient></defs>
+  <rect width="256" height="256" rx="56" fill="url(#rtf)"/>
+  <!-- Rich text: lines of a page that carry weight and slant, not just characters. -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="52" y="34" width="152" height="188" rx="14" stroke-width="12"/>
+    <path d="M80 78 H176" stroke-width="22"/>
+    <path d="M80 122 H164" stroke-width="11"/>
+    <path d="M146 156 L112 200" stroke-width="11"/>
+    <path d="M80 178 H120" stroke-width="11"/>
+  </g>
+</svg>

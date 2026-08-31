@@ -1,0 +1,4 @@
+baseURL = "https://go-rtf.github.io/"
+locale = "en-us"
+title = "go-rtf"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
