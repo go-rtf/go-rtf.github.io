@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — Rich Text Format, in and out.</title>
 <meta name="description" content="Rich Text Format, in and out. Pure Go, CGO_ENABLED=0.">
 <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
