@@ -1,15 +1,25 @@
+/* --from and --to are the logo's gradient. --accent is the colour of TEXT:
+   links, and the headings of panels and sections. A logo is exempt from the
+   contrast rule and the text painted in its colour is not — WCAG 2.2 SC 1.4.3
+   says so in as many words — so in dark mode the accent is not --from, which
+   is 2.96:1 on this page's #0b1418 and fails even the 3:1 large-text bar.
+
+   --accent-dark is --from moved 24 % toward white, the first 4 % step that
+   clears 4.5:1, measured with `landingkit contrast '#0b1418' '#7972eb'`. The
+   same rule the landing kit applies to the organisations on it; this landing
+   is hand-made, so it carries the value rather than deriving it. */
 :root{
-  --from:#4F46E5;--to:#1E1B4B;--dark:#2A2672;
+  --from:#4F46E5;--to:#1E1B4B;--dark:#2A2672;--accent-dark:#7972eb;
   --ink:#0b2530;--muted:#5b6b73;--bg:#f5f8fa;--card:#fff;--line:#e3ebef;
   --code:#0b2530;--codei:#d6f3fb;--shadow:rgba(0,60,90,.06);--shadow2:rgba(0,60,90,.10);
   --accent:var(--to);
 }
 @media (prefers-color-scheme: dark){
   :root{--ink:#e6f2f6;--muted:#8fa6ae;--bg:#0b1418;--card:#111e24;--line:#1f333b;
-    --code:#02090c;--codei:#bfeefb;--shadow:rgba(0,0,0,.4);--shadow2:rgba(0,0,0,.55);--accent:var(--from);}
+    --code:#02090c;--codei:#bfeefb;--shadow:rgba(0,0,0,.4);--shadow2:rgba(0,0,0,.55);--accent:var(--accent-dark);}
 }
 :root[data-theme="dark"]{--ink:#e6f2f6;--muted:#8fa6ae;--bg:#0b1418;--card:#111e24;--line:#1f333b;
-  --code:#02090c;--codei:#bfeefb;--shadow:rgba(0,0,0,.4);--shadow2:rgba(0,0,0,.55);--accent:var(--from);}
+  --code:#02090c;--codei:#bfeefb;--shadow:rgba(0,0,0,.4);--shadow2:rgba(0,0,0,.55);--accent:var(--accent-dark);}
 :root[data-theme="light"]{--ink:#0b2530;--muted:#5b6b73;--bg:#f5f8fa;--card:#fff;--line:#e3ebef;
   --code:#0b2530;--codei:#d6f3fb;--shadow:rgba(0,60,90,.06);--shadow2:rgba(0,60,90,.10);--accent:var(--to);}
 *{box-sizing:border-box}
